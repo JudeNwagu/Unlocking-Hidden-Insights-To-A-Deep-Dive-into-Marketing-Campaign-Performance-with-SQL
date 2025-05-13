@@ -8,7 +8,7 @@ SQL-based analysis of digital marketing campaign data to evaluate ad performance
  - [ASK](#ASK)
  - [PREPARE](#PREPARE)
  - [PROCESS](#PROCESS)
- - [ANALYZE-SHARE](#ANALYZE-&-SHARE)
+ - [ANALYZE-SHARE](#ANALYZE-SHARE)
  - [ACT](#ACT)
 
 ## INTRODUCTION
@@ -112,7 +112,7 @@ The first image is before cleaning the data the CTR column contains % as a varch
 
 ---
 
-## ANALYZE & SHARE
+## ANALYZE SHARE
 
 ### Campaign Performance:
 
