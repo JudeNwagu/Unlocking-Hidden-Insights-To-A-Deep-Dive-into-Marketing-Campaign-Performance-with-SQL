@@ -119,7 +119,8 @@ The first image is before cleaning the data the CTR column contains % as a varch
 
 * Which campaign generated the highest number of impressions, clicks, and conversions?
 
-<pre> ```sql SELECT Campaign, 
+<pre> ```sql 
+ SELECT Campaign, 
   ROUND(Sum(impressions), 0) AS Total_Impressions, 
   SUM(clicks) AS Total_Clicks,
   SUM(conversions) AS Total_conversions
@@ -128,3 +129,21 @@ GROUP BY Campaign
 ORDER BY Total_impressions DESC, 
 Total_Clicks DESC, 
 Total_Conversions DESC; ``` </pre>
+
+
+### Campaign Performance:
+
+- **Which campaign generated the highest number of impressions, clicks, and conversions?**
+
+```sql
+-- Which campaign generated the highest number of impressions, clicks, and conversions
+SELECT Campaign,
+  ROUND(SUM(impressions), 0) AS Total_Impressions,
+  SUM(clicks) AS Total_Clicks,
+  SUM(conversions) AS Total_Conversions
+FROM Campaign
+GROUP BY Campaign
+ORDER BY Total_Impressions DESC,
+  Total_Clicks DESC,
+  Total_Conversions DESC;
+
