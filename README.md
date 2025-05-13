@@ -117,22 +117,6 @@ The first image is before cleaning the data the CTR column contains % as a varch
 
 ### Campaign Performance:
 
-* Which campaign generated the highest number of impressions, clicks, and conversions?
-
-<pre> ```sql 
- SELECT Campaign, 
-  ROUND(Sum(impressions), 0) AS Total_Impressions, 
-  SUM(clicks) AS Total_Clicks,
-  SUM(conversions) AS Total_conversions
-FROM Campaign
-GROUP BY Campaign
-ORDER BY Total_impressions DESC, 
-Total_Clicks DESC, 
-Total_Conversions DESC; ``` </pre>
-
-
-### Campaign Performance:
-
 - **Which campaign generated the highest number of impressions, clicks, and conversions?**
 
 ```sql
@@ -146,4 +130,35 @@ GROUP BY Campaign
 ORDER BY Total_Impressions DESC,
   Total_Clicks DESC,
   Total_Conversions DESC;
+```
+
+![](https://github.com/judoski366/Unlocking-Hidden-Insights-To-A-Deep-Dive-into-Marketing-Campaign-Performance-with-SQL/blob/main/Campaign%20Performance.png)
+
+
+**Analysis** 
+
+* Based on the data analysis, it has been observed that the fall season has the highest number of campaigns, followed by the spring season. Conversely, the summer season has the least number of campaigns. This information is based on the total impressions, clicks, and conversions recorded in the data.
+
+
+**What is the average cost-per-click (CPC) and click-through rate (CTR) for each campaign?**
+
+ ```sql
+--- What is the average cost-per-click (CPC) and click-through rate (CTR) for each campaign?
+
+SELECT Campaign,
+ ROUND(AVG(CAST(daily_average_cpc AS FLOAT)), 2) AS Avg_cpc,
+ ROUND(AVG(CAST(CTR AS FLOAT)), 2) AS Avg_CTR
+FROM Campaign
+GROUP BY Campaign
+ORDER BY Avg_Cpc DESC;
+```
+
+![](https://github.com/judoski366/Unlocking-Hidden-Insights-To-A-Deep-Dive-into-Marketing-Campaign-Performance-with-SQL/blob/main/Average%20CPC.png)
+
+**Analysis:** 
+
+* The average cost per click (CPC) for the fall campaign is 1.35%, for the spring campaign it is 1.23%, and for the summer campaign it is 1.13%. The average click-through rate (CTR) for the fall campaign is 0.93%, for the spring campaign it is 0.86%, and for the summer campaign, it is 0.92%.
+
+* The fall campaign stands out with the highest average CPC and average CTR, indicating a peak in performance compared to the spring and summer campaigns. There are noticeable variations in both average CPC and average CTR between the summer and spring campaigns.
+
 
