@@ -8,7 +8,7 @@ SQL-based analysis of digital marketing campaign data to evaluate ad performance
  - [ASK](#ASK)
  - [PREPARE](#PREPARE)
  - [PROCESS](#PROCESS)
- - [ANALYZE & SHARE](#ANALYZE-&-SHARE)
+ - [ANALYZE-SHARE](#ANALYZE-&-SHARE)
  - [ACT](#ACT)
 
 ## INTRODUCTION
