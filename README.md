@@ -1,4 +1,4 @@
-# Unlocking-Hidden-Insights-To-A-Deep-Dive-into-Marketing-Campaign-Performance-with-SQL
+# Digital Marketing Campaign Performance Analysis with SQL
 SQL-based analysis of digital marketing campaign data to evaluate ad performance, optimize ROI, and support data-driven marketing strategies.
 
 ![](https://github.com/judoski366/Unlocking-Hidden-Insights-To-A-Deep-Dive-into-Marketing-Campaign-Performance-with-SQL/blob/main/Marketing%20Image.jpg)
